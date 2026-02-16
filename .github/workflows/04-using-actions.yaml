@@ -12,8 +12,16 @@ jobs:
         - name: Checkout Code
           uses: actions/checkout@v4
 
-        - name: Printing Folders
-          run: ls
+        - name: Setup Node
+          uses: actih:on/setup-node@v4
+          with:
+            node-version: 20
+
+        - name: Install Dependencies
+          run: |
+            - cd 04-using-actions/react-app
+            - npm ci
 
 
-          
+
+
