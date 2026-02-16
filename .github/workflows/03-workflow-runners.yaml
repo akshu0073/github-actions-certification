@@ -1,9 +1,10 @@
 name: 03 - Workflow Runners
 
 on:
-  push:
-    branches:
-      - main
+#   push:
+#     branches:
+#       - main
+    workflow_dispatch:
 
 jobs:
     ubuntu-echo:
