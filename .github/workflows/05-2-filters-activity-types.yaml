@@ -13,3 +13,4 @@ jobs:
         steps:
           - name: Printing the command to close PR
             run: echo "Running whenever a PR is closed"
+            
